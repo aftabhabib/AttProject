@@ -1,18 +1,120 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.hungvannguyen.myapplication.MainActivity">
+    android:orientation="horizontal"
+    tools:context="com.example.hungvannguyen.myapplication.View.MainActivity"
+    android:weightSum="1"
+    >
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_weight="0.2"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:weightSum="1"
+        >
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="0.7"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+                android:id="@+id/tv_home"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_gravity="center"
+                android:text="Home"
+                android:textSize="@dimen/_15sdp"
+                android:textColor="@color/colorWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_vtv"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_gravity="center"
+                android:text="VTV"
+                android:textSize="@dimen/_15sdp"
+                android:textColor="@color/colorWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_vtc"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_gravity="center"
+                android:text="VTC"
+                android:textSize="@dimen/_15sdp"
+                android:textColor="@color/colorWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_hctv"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_gravity="center"
+                android:text="HCTV"
+                android:textSize="@dimen/_15sdp"
+                android:textColor="@color/colorWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
 
-</android.support.constraint.ConstraintLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="0.8"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:background="@color/colorGray"
+        >
+        <ImageView
+            android:src="@drawable/banner"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.7">
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/ln_home"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_home"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </android.support.v7.widget.RecyclerView>
+            </LinearLayout>
+            <LinearLayout
+                android:visibility="gone"
+                android:orientation="vertical"
+                android:id="@+id/ln_home1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <TextView
+                    android:id="@+id/tv_namechannel"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="VTV"
+                    android:textSize="@dimen/_15sdp"
+                    android:textColor="@color/colorWhite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>
