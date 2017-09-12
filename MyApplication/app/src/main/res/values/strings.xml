@@ -4,4 +4,5 @@
     <string name="dialog_core_not_installed_message">Please install \"Mx Player \" app from Google Play</string>
     <string name="dialog_button_install">Install</string>
     <string name="dialog_button_cancel">Cancel</string>
+    <string name="watching_tv">Truyền hình</string>
 </resources>

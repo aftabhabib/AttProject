@@ -6,6 +6,8 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
 import com.example.hungvannguyen.myapplication.Model.Channel;
@@ -54,10 +56,26 @@ public class AdapterChannel extends RecyclerView.Adapter<AdapterChannel.HolderCh
 
     public class HolderChannel extends RecyclerView.ViewHolder implements View.OnClickListener {
         private ImageView imageView;
-        public HolderChannel(View itemView) {
+        public HolderChannel(final View itemView) {
             super(itemView);
             imageView= (ImageView) itemView.findViewById(R.id.iv_item_channel);
             itemView.setOnClickListener(this);
+            itemView.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+                @Override
+                public void onFocusChange(View v, boolean hasFocus) {
+                    if (hasFocus) {
+                        // run scale animation and make it bigger
+                        Animation anim = AnimationUtils.loadAnimation(context, R.anim.scale_in_tv);
+                        itemView.startAnimation(anim);
+                        anim.setFillAfter(true);
+                    } else {
+                        // run scale animation and make it smaller
+                        Animation anim = AnimationUtils.loadAnimation(context, R.anim.scale_out_tv);
+                        itemView.startAnimation(anim);
+                        anim.setFillAfter(true);
+                    }
+                }
+            });
         }
 
         @Override

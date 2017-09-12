@@ -123,7 +123,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void showListChannel(List<Channel> channels){
         AdapterChannel adapterChannel= new AdapterChannel(channels,this);
-        rv_home1.setLayoutManager(new GridLayoutManager(this,4,LinearLayoutManager.VERTICAL,false));
+        rv_home1.setLayoutManager(new GridLayoutManager(this,3,LinearLayoutManager.VERTICAL,false));
+
         rv_home1.setAdapter(adapterChannel);
         adapterChannel.setClickListener(this);
         adapterChannel.notifyDataSetChanged();
@@ -171,7 +172,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     public void onClick(DialogInterface dialogInterface, int id)
                     {
                         // if cancelled - just close the app
-                        finish();
                     }
                 });
         builder.setCancelable(false);

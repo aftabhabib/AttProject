@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/capture"
+    >
+    <TextView
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:textColor="@color/colorWhite"
+        android:text="Videos"
+        android:paddingRight="@dimen/_28sdp"
+        android:textSize="@dimen/_22sdp"
+        android:paddingTop="@dimen/_20sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <!--<LinearLayout-->
+        <!--android:gravity="right"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:weightSum="1"-->
+        <!--&gt;-->
+        <!--<TextView-->
+          <!---->
+            <!--android:textColor="@color/colorWhite"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+        <!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
+            <!--&lt;!&ndash;android:orientation="vertical"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="0dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_weight="0.25"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:background="@color/colorBlue"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:weightSum="1"&ndash;&gt;-->
+            <!--&lt;!&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_marginLeft="@dimen/_20sdp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:src="@drawable/unnamed"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:scaleType="centerInside"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_width="@dimen/_70sdp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_height="0dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_weight="0.25"&ndash;&gt;-->
+                <!--&lt;!&ndash;/>&ndash;&gt;-->
+            <!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_marginLeft="@dimen/_20sdp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:orientation="vertical"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_weight="0.75"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_height="0dp">&ndash;&gt;-->
+                <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:id="@+id/tv_home"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_marginTop="@dimen/_5sdp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:text="Home"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:textSize="@dimen/_15sdp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:textColor="@color/colorWhite"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_height="wrap_content" />&ndash;&gt;-->
+                <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:id="@+id/tv_vtv"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_marginTop="@dimen/_5sdp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:text="VTV"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:textSize="@dimen/_15sdp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:textColor="@color/colorWhite"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_height="wrap_content" />&ndash;&gt;-->
+
+                <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:id="@+id/tv_vtc"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_marginTop="@dimen/_5sdp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:text="VTC"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:textColor="@color/colorWhite"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:textSize="@dimen/_15sdp" />&ndash;&gt;-->
+
+                <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:id="@+id/tv_hctv"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_marginTop="@dimen/_5sdp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:text="HCTV"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:textSize="@dimen/_15sdp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:textColor="@color/colorWhite"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_height="wrap_content" />&ndash;&gt;-->
+            <!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
+
+
+        <!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
+        <!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
+
+            <!--&lt;!&ndash;android:orientation="vertical"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_weight="0.71"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="0dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:weightSum="1"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:background="@color/colorBlack"&ndash;&gt;-->
+            <!--&lt;!&ndash;&gt;&ndash;&gt;-->
+
+            <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                <!--&lt;!&ndash;android:paddingTop="@dimen/_20sdp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:paddingRight="@dimen/_40sdp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:id="@+id/textView"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_height="0dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_weight="0.25"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:gravity="end"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:text="Tivi"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:textColor="@color/colorWhite"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:textSize="@dimen/_30sdp" />&ndash;&gt;-->
+
+            <!--&lt;!&ndash;<RelativeLayout&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_height="0dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_weight="0.75">&ndash;&gt;-->
+                <!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:orientation="vertical"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:id="@+id/ln_home"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+                    <!--&lt;!&ndash;&gt;&ndash;&gt;-->
+                    <!--&lt;!&ndash;<android.support.v7.widget.RecyclerView&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:layout_marginLeft="@dimen/_10sdp"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:id="@+id/rv_home"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:layout_height="match_parent">&ndash;&gt;-->
+                    <!--&lt;!&ndash;</android.support.v7.widget.RecyclerView>&ndash;&gt;-->
+                <!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
+                <!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:visibility="gone"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:orientation="vertical"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:id="@+id/ln_home1"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+                    <!--&lt;!&ndash;&gt;&ndash;&gt;-->
+                    <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:layout_marginLeft="@dimen/_10sdp"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:id="@+id/tv_namechannel"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:layout_marginTop="@dimen/_5sdp"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:text="VTV"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:textSize="@dimen/_17sdp"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:textColor="@color/colorWhite"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:layout_height="wrap_content" />&ndash;&gt;-->
+                    <!--&lt;!&ndash;<android.support.v7.widget.RecyclerView&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:layout_marginLeft="@dimen/_10sdp"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:id="@+id/rv_home1"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:layout_height="match_parent">&ndash;&gt;-->
+
+                    <!--&lt;!&ndash;</android.support.v7.widget.RecyclerView>&ndash;&gt;-->
+                <!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
+            <!--&lt;!&ndash;</RelativeLayout>&ndash;&gt;-->
+
+        <!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
+
+    <!--</LinearLayout>-->
+
+
+</RelativeLayout>

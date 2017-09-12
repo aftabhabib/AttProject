@@ -12,80 +12,99 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="0dp"
-        android:layout_weight="0.2"
+        android:layout_weight="0.29"
         android:layout_height="match_parent"
-        android:background="@color/colorPrimary"
+        android:background="@color/colorBlue"
         android:weightSum="1"
         >
-        <View
-            android:layout_width="match_parent"
+        <ImageView
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:src="@drawable/unnamed"
+            android:scaleType="centerInside"
+            android:layout_width="@dimen/_80sdp"
             android:layout_height="0dp"
-            android:layout_weight="0.3"
+            android:layout_weight="0.25"
             />
         <LinearLayout
+            android:layout_marginLeft="@dimen/_30sdp"
             android:orientation="vertical"
-            android:layout_weight="0.7"
+            android:layout_weight="0.75"
             android:layout_width="match_parent"
             android:layout_height="0dp">
             <TextView
+                android:focusable="true"
                 android:id="@+id/tv_home"
-                android:layout_marginTop="@dimen/_5sdp"
-                android:layout_gravity="center"
                 android:text="Home"
                 android:textSize="@dimen/_15sdp"
                 android:textColor="@color/colorWhite"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:nextFocusDown="@+id/tv_vtv"
+                android:nextFocusRight="@+id/rv_home1"
+                />
             <TextView
                 android:id="@+id/tv_vtv"
                 android:layout_marginTop="@dimen/_5sdp"
-                android:layout_gravity="center"
                 android:text="VTV"
-                android:textSize="@dimen/_15sdp"
+                android:textSize="@dimen/_11sdp"
                 android:textColor="@color/colorWhite"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:nextFocusDown="@+id/tv_vtc"
+                android:nextFocusRight="@+id/rv_home1"
+                />
+
             <TextView
                 android:id="@+id/tv_vtc"
-                android:layout_marginTop="@dimen/_5sdp"
-                android:layout_gravity="center"
-                android:text="VTC"
-                android:textSize="@dimen/_15sdp"
-                android:textColor="@color/colorWhite"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="VTC"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_11sdp"
+                android:nextFocusDown="@+id/tv_hctv"
+                android:nextFocusRight="@+id/rv_home1"
+                />
+
             <TextView
                 android:id="@+id/tv_hctv"
                 android:layout_marginTop="@dimen/_5sdp"
-                android:layout_gravity="center"
                 android:text="HCTV"
-                android:textSize="@dimen/_15sdp"
+                android:textSize="@dimen/_11sdp"
                 android:textColor="@color/colorWhite"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:nextFocusRight="@+id/rv_home1"
+                />
         </LinearLayout>
 
 
     </LinearLayout>
     <LinearLayout
         android:orientation="vertical"
-        android:layout_weight="0.8"
+        android:layout_weight="0.711"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:weightSum="1"
-        android:background="@color/colorGray"
+        android:background="@color/colorBlack"
         >
-        <ImageView
-            android:src="@drawable/banner"
-            android:scaleType="fitXY"
+
+        <TextView
+            android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="0.3"
-            />
+            android:layout_weight="0.25"
+            android:gravity="end"
+            android:paddingRight="@dimen/_28sdp"
+            android:paddingTop="@dimen/_20sdp"
+            android:text="@string/watching_tv"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_22sdp" />
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="0.7">
+            android:layout_weight="0.75">
             <LinearLayout
                 android:orientation="vertical"
                 android:id="@+id/ln_home"
@@ -93,7 +112,8 @@
                 android:layout_height="match_parent"
                 >
                 <android.support.v7.widget.RecyclerView
-
+                    android:nextFocusLeft="@+id/tv_home"
+                    android:layout_marginLeft="@dimen/_10sdp"
                     android:id="@+id/rv_home"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
@@ -107,15 +127,17 @@
                 android:layout_height="match_parent"
                 >
                 <TextView
+                    android:layout_marginLeft="@dimen/_10sdp"
                     android:id="@+id/tv_namechannel"
                     android:layout_marginTop="@dimen/_5sdp"
                     android:text="VTV"
-                    android:textSize="@dimen/_15sdp"
+                    android:textSize="@dimen/_11sdp"
                     android:textColor="@color/colorWhite"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
                 <android.support.v7.widget.RecyclerView
-                    android:layout_gravity="center_horizontal"
+                    android:nextFocusLeft="@+id/tv_home"
+                    android:layout_marginLeft="@dimen/_10sdp"
                     android:id="@+id/rv_home1"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent">
